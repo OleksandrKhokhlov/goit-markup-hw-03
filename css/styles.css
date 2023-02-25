@@ -12,7 +12,7 @@
 	--horizontal-gap: 24px;
 }
 body {
-	max-width: 100%;
+	max-width: 1440px;
 	color: var(--text);
 	background-color: var(--background-color-primary);
 	font-family: "Roboto", sans-serif;
@@ -38,6 +38,8 @@ ol {
 	padding-left: 0;
 }
 img {
+	max-width: 100%;
+	height: auto;
 	display: block;
 }
 /* ----------------Container---------------- */
@@ -120,9 +122,11 @@ img {
 .link-nav:focus {
 	color: var(--pressed-state);
 }
+.address {
+	margin-left: auto;
+}
 .contact {
 	display: flex;
-	margin-left: 332px;
 	gap: 40px;
 }
 .contact-link {
@@ -139,13 +143,18 @@ img {
 .hero {
 	text-align: center;
 	background-color: #2e2f42;
+	padding-top: 188px;
+	padding-bottom: 188px;
 }
 .hero-title {
+	max-width: 496px;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	color: var(--background-color-primary);
 	margin-bottom: 48px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .hero-btn {
 	font-family: inherit;
@@ -187,30 +196,30 @@ img {
 	color: var(--dark);
 }
 .employment-list {
-	width: calc(100% / 3 - var(--horizontal-gap));
 	display: flex;
 	gap: var(--horizontal-gap);
+}
+.employment-item {
+	width: calc(100% / 3 - var(--horizontal-gap));
 }
 /* team section */
 .team {
 	background-color: var(--light);
 }
 .team-list {
-	width: calc(100% / 4 - var(--horizontal-gap));
 	display: flex;
 	gap: var(--horizontal-gap);
 }
 .team-item {
+	width: calc(100% / 4 - var(--horizontal-gap));
 	background-color: var(--background-color-primary);
 	text-align: center;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
-.team-item > img {
-	padding-bottom: 32px;
-}
+
 .team-item > p {
-	padding-top: 8px;
+	
 	padding-bottom: 32px;
 }
 .team-title {
@@ -221,6 +230,8 @@ img {
 	font-size: 20px;
 	line-height: 1.2;
 	color: var(--dark);
+	padding-top: 32px;
+	margin-bottom: 8px;
 }
 /* footer */
 .footer {
@@ -243,12 +254,11 @@ img {
 	color: var(--accent);
 	max-width: 264px;
 }
-/* portfolio.html */
+/* --------------------portfolio.html----------------------- */
 .filtr-list {
 	display: flex;
 	gap: var(--horizontal-gap);
 	justify-content: center;
-	margin-top: 96px;
 	margin-bottom: 72px;
 }
 .filtr-btn {
@@ -272,7 +282,7 @@ img {
 	border-color: var(--pressed-state);
 }
 .portfolio {
-	padding-top: 0;
+	padding-top: 96px;
 }
 .portfolio-title {
 	font-weight: 500;
@@ -291,7 +301,7 @@ img {
 }
 .card-description {
 	border: 1px solid var(--accent);
-	padding: 32px 0 32px 16px;
+	padding: 32px 16px;
 	border-top: 0;
 }
 .card > div > p {
